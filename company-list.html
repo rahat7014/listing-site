@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo/logo-dark.png" alt="logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Companies</a>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
+                <div class="d-flex nav-btn-area">
+                    <button class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="search-area bg-blue-opacity">
+        <div class="container">
+            <h1>Search Companies</h1>
+            <div class="search-title-sub">Work for the best companies in the world</div>
+            <div class="search-ber">
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="d-flex align-items-center">
+                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Company Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 src-has-left-border">
+                            <div class="d-flex align-items-center w-100">
+                                <span><i class="fa-solid fa-globe"></i></span>
+                                <select class="form-select" id="location-select" data-placeholder="Select Location">
+                                    <option></option>
+                                    <option>Dhaka</option>
+                                    <option>Chottogram</option>
+                                    <option>Cumillah</option>
+                                    <option>Sylet</option>
+                                    <option>Barishal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 src-has-left-border">
+                            <div class="d-flex align-items-center w-100">
+                                <span><i class="fa-solid fa-list"></i></span>
+                                <select class="form-select" id="category-select" data-placeholder="Select Category">
+                                    <option></option>
+                                    <option>IT & Software Development</option>
+                                    <option>Digital Marketing & SEO</option>
+                                    <option> Business Consulting & Finance</option>
+                                    <option>Logistics & Supply Chain</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <button class="btn btn-primary w-100 round-50">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding-100 company-listing">
+        <div class="container">
+            <div class="row d-flex align-items-center mb-3">
+                <div class="col-md-6">
+                    <h5>
+                        Showing <strong>8,536</strong> companies
+                    </h5>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-end">
+                    <div
+                        class="input-group border rounded input-group-lg w-auto mr-4 d-flex justify-content-md-end align-items-center p-2">
+                        <label class="sorting-label" for="inputGroupSelect01"><i
+                                class="fas fa-align-left fs-16 pe-2"></i>Sort-by :</label>
+
+                        <div class="nice-select right form-control border-0 bg-transparent shadow-none p-0 selectpicker sortby d-flex align-items-center"
+                            tabindex="0"><span class="current">Most relevant</span>
+                            <ul class="list">
+                                <li data-value="Popularity" class="option selected">Most relevant</li>
+                                <li data-value="1" class="option">Name Asc</li>
+                                <li data-value="2" class="option">Name Desc</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="company-item">
+                        <div class="row mb-2">
+
+                            <div class="col-3 pe-0">
+                                <img src="assets/img/company/1.webp" class="company-logo">
+                            </div>
+                            <div class="col-9">
+                                <div class="company-name">Becon Soluation LTD</div>
+                                <div class="location"><i class="fa-solid fa-location-dot me-2"></i>San Francisco, CA,
+                                    USA
+                                </div>
+                                <div class="company-link"><a class="" href="#!" target="_blank"><i
+                                            class="fa-solid fa-earth-americas me-2"></i>www.becon.com</a></div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i> 5 (review 975)
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="company-description">Becon Soluation LTD is a leading business advisory firm
+                                    specializing in financial
+                                    management, risk assessment, and business strategy. With over a decade of
+                                    experience, we have helped hundreds of startups and enterprises achieve sustainable
+                                    growth. Our expert team offers customized solutions for business expansion, market
+                                    entry, and operational efficiency.</div>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 mt-2">
+                                <div class="cat-featured-tag">Market Research</div>
+                                <a class="link-btn" href="company-details.html">Learn More<i
+                                        class="fa-solid fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4">
+                    <div class="company-item">
+                        <div class="row mb-2">
+
+                            <div class="col-3 pe-0">
+                                <img src="assets/img/company/2.webp" class="company-logo">
+                            </div>
+                            <div class="col-9">
+                                <div class="company-name">Becon Soluation LTD</div>
+                                <div class="location"><i class="fa-solid fa-location-dot me-2"></i>San Francisco, CA,
+                                    USA
+                                </div>
+                                <div class="company-link"><a class="" href="#!" target="_blank"><i
+                                            class="fa-solid fa-earth-americas me-2"></i>www.becon.com</a></div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i> 5 (review 975)
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="company-description">Becon Soluation LTD is a leading business advisory firm
+                                    specializing in financial
+                                    management, risk assessment, and business strategy. With over a decade of
+                                    experience, we have helped hundreds of startups and enterprises achieve sustainable
+                                    growth. Our expert team offers customized solutions for business expansion, market
+                                    entry, and operational efficiency.</div>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 mt-2">
+                                <div class="cat-featured-tag">Market Research</div>
+                                <a class="link-btn" href="company-details.html">Learn More<i
+                                        class="fa-solid fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4">
+                    <div class="company-item">
+                        <div class="row mb-2">
+
+                            <div class="col-3 pe-0">
+                                <img src="assets/img/company/3.webp" class="company-logo">
+                            </div>
+                            <div class="col-9">
+                                <div class="company-name">Becon Soluation LTD</div>
+                                <div class="location"><i class="fa-solid fa-location-dot me-2"></i>San Francisco, CA,
+                                    USA
+                                </div>
+                                <div class="company-link"><a class="" href="#!" target="_blank"><i
+                                            class="fa-solid fa-earth-americas me-2"></i>www.becon.com</a></div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i> 5 (review 975)
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="company-description">Becon Soluation LTD is a leading business advisory firm
+                                    specializing in financial
+                                    management, risk assessment, and business strategy. With over a decade of
+                                    experience, we have helped hundreds of startups and enterprises achieve sustainable
+                                    growth. Our expert team offers customized solutions for business expansion, market
+                                    entry, and operational efficiency.</div>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 mt-2">
+                                <div class="cat-featured-tag">Market Research</div>
+                                <a class="link-btn" href="company-details.html">Learn More<i
+                                        class="fa-solid fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4">
+                    <div class="company-item">
+                        <div class="row mb-2">
+
+                            <div class="col-3 pe-0">
+                                <img src="assets/img/company/4.webp" class="company-logo">
+                            </div>
+                            <div class="col-9">
+                                <div class="company-name">Becon Soluation LTD</div>
+                                <div class="location"><i class="fa-solid fa-location-dot me-2"></i>San Francisco, CA,
+                                    USA
+                                </div>
+                                <div class="company-link"><a class="" href="#!" target="_blank"><i
+                                            class="fa-solid fa-earth-americas me-2"></i>www.becon.com</a></div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i> 5 (review 975)
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="company-description">Becon Soluation LTD is a leading business advisory firm
+                                    specializing in financial
+                                    management, risk assessment, and business strategy. With over a decade of
+                                    experience, we have helped hundreds of startups and enterprises achieve sustainable
+                                    growth. Our expert team offers customized solutions for business expansion, market
+                                    entry, and operational efficiency.</div>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 mt-2">
+                                <div class="cat-featured-tag">Market Research</div>
+                                <a class="link-btn" href="company-details.html">Learn More<i
+                                        class="fa-solid fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4">
+                    <div class="company-item">
+                        <div class="row mb-2">
+
+                            <div class="col-3 pe-0">
+                                <img src="assets/img/company/5.webp" class="company-logo">
+                            </div>
+                            <div class="col-9">
+                                <div class="company-name">Becon Soluation LTD</div>
+                                <div class="location"><i class="fa-solid fa-location-dot me-2"></i>San Francisco, CA,
+                                    USA
+                                </div>
+                                <div class="company-link"><a class="" href="#!" target="_blank"><i
+                                            class="fa-solid fa-earth-americas me-2"></i>www.becon.com</a></div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i> 5 (review 975)
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="company-description">Becon Soluation LTD is a leading business advisory firm
+                                    specializing in financial
+                                    management, risk assessment, and business strategy. With over a decade of
+                                    experience, we have helped hundreds of startups and enterprises achieve sustainable
+                                    growth. Our expert team offers customized solutions for business expansion, market
+                                    entry, and operational efficiency.</div>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 mt-2">
+                                <div class="cat-featured-tag">Market Research</div>
+                                <a class="link-btn" href="company-details.html">Learn More<i
+                                        class="fa-solid fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4">
+                    <div class="company-item">
+                        <div class="row mb-2">
+
+                            <div class="col-3 pe-0">
+                                <img src="assets/img/company/6.webp" class="company-logo">
+                            </div>
+                            <div class="col-9">
+                                <div class="company-name">Becon Soluation LTD</div>
+                                <div class="location"><i class="fa-solid fa-location-dot me-2"></i>San Francisco, CA,
+                                    USA
+                                </div>
+                                <div class="company-link"><a class="" href="#!" target="_blank"><i
+                                            class="fa-solid fa-earth-americas me-2"></i>www.becon.com</a></div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i> 5 (review 975)
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="company-description">Becon Soluation LTD is a leading business advisory firm
+                                    specializing in financial
+                                    management, risk assessment, and business strategy. With over a decade of
+                                    experience, we have helped hundreds of startups and enterprises achieve sustainable
+                                    growth. Our expert team offers customized solutions for business expansion, market
+                                    entry, and operational efficiency.</div>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 mt-2">
+                                <div class="cat-featured-tag">Market Research</div>
+                                <a class="link-btn" href="company-details.html">Learn More<i
+                                        class="fa-solid fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link"><i class="fa-solid fa-chevron-left"></i></a>
+                            </li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rs-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-3 col-md-4">
+                        <div class="footer-logo">
+                            <a href="/">
+                                <img src="assets/img/logo/logo-dark.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="textwidget pb-3">
+                            <p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce
+                                with illo inventore veritatis</p>
+                        </div>
+                        <ul class="footer-social md-mb-30">
+                            <li><a href="/onepage-5"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="/onepage-5"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="/onepage-5"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            <li><a href="/onepage-5"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 pl-44 md-pl-14 md-mb-30">
+                        <h3 class="widget-title">Top Category</h3>
+                        <ul class="site-map">
+                            <li><a href="">IT & Software
+                                    Development</a></li>
+                            <li><a href="">Digital Marketing & SEO</a></li>
+                            <li><a href=""> Business Consulting &
+                                    Finance</a></li>
+                            <li><a href="">Logistics & Supply
+                                    Chain</a></li>
+                            <li><a href="">Real Estate & Property
+                                    Management</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 md-mb-30">
+                        <h3 class="widget-title">Contact Info</h3>
+                        <ul class="address-widget">
+                            <li><i class="fa-solid fa-location-dot"></i>
+                                <div class="desc">374 FA Tower, William S Blvd 2721, IL, USA</div>
+                            </li>
+                            <li><i class="fa-solid fa-phone"></i>
+                                <div class="desc"><a href="/onepage-5">(+880)155-69569</a></div>
+                            </li>
+                            <li><i class="fa-solid fa-envelope"></i>
+                                <div class="desc"><a href="/onepage-5">support@rstheme.com</a></div>
+                            </li>
+                            <li><i class="fa-regular fa-clock"></i>
+                                <div class="desc">Opening Hours: 10:00 - 18:00</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-12 col-sm-12">
+                        <h3 class="widget-title">Newsletter</h3>
+                        <p class="widget-desc">We denounce with righteous and in and dislike men who are so beguiled and
+                            demo realized.</p>
+                        <p>
+                            <div class="newsletter-area pt-75 pb-40">
+                                <div class="single-newsletters">
+                                    <div class="newsletter-form">
+                                        <div><input type="email" placeholder="Your email"><button>Submit</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row y-middle">
+                    <div class="col-lg-6 text-right md-text-center md-mb-10 mb-0 order-last d-flex justify-content-end">
+                        <ul class="copy-right-menu mb-0">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/shop">Shop</a></li>
+                            <li><a href="/faq">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="copyright md-text-center md-mb-10">
+                            <p>© 2025 All Rights Reserved. Developed By <a href="#!" target="_blank">Technohaat LTD</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

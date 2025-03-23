@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo/logo-dark.png" alt="logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="company-list.html">Companies</a>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
+                <div class="d-flex nav-btn-area">
+                    <button class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="swiper mySwiper hero-banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-image" style="background: rgb(0, 0, 0);
+                    background: linear-gradient(45deg, #00237e, #3749bbab, #0bc1e95e, #3749bba1, #00237e94), url(/assets/img/banner/banner-1.jpg);
+                    opacity: 0.9;
+                    height: 100%;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center right;
+                    background-size: cover;">
+                    <div class="swiper-content">
+                        <div class="container">
+                            <div class="content-area">
+                                <h1>IT Consulting Services
+                                    For <br /> Your Business</h1>
+                                <p>We are leading technology solutions providing company all over the world doing over
+                                    40 years.</p>
+
+                                <a href="#!" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-image" style="background: rgb(0, 0, 0);
+                    background: linear-gradient(45deg, #00237e, #3749bbab, #0bc1e95e, #3749bba1, #00237e94), url(/assets/img/banner/banner-2.jpg);
+                    opacity: 0.9;
+                    height: 100%;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center right;
+                    background-size: cover;">
+                    <div class="swiper-content">
+                        <div class="container">
+                            <div class="content-area">
+                                <h1>IT Consulting Services
+                                    For <br /> Your Business</h1>
+                                <p>We are leading technology solutions providing company all over the world doing over
+                                    40 years.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next d-none d-sm-block"></div>
+        <div class="swiper-button-prev d-none d-sm-block"></div>
+    </section>
+
+    <section class="section-padding-100 overflow-hidden-x ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 align-items-center">
+                    <div class="sec-title">
+                        <div class="sub-text style4-bg">About Us</div>
+                        <div class="title pb-3">Connecting Businesses with the Right Opportunities</div>
+                        <div class="desc">For over 25 years, we have been helping businesses find trusted service
+                            providers, connect with potential partners, and grow their presence in the digital world.
+                            Our platform enables companies to showcase their expertise and services while helping users
+                            discover the best businesses across industries.
+
+                            With a vast database of companies and industry experts, we ensure businesses can make
+                            informed decisions while expanding their network globally.</div>
+                    </div>
+
+                    <div class="counter-top-area counter">
+                        <div class="row">
+                            <div class="col-6 sm-pr-0 sm-pl-0 xs-mb-30">
+                                <div class="counter-list">
+                                    <div class="counter-text">
+                                        <div class="count-number">
+                                            <span data-purecounter-start="0" data-purecounter-end="450"
+                                                data-purecounter-duration="5" class="purecounter">450</span>
+                                        </div>
+                                        <h3 class="title">Verified Businesses</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 sm-pr-0 sm-pl-0">
+                                <div class="counter-list">
+                                    <div class="counter-text">
+                                        <div class="count-number">
+                                            <span data-purecounter-start="0" data-purecounter-end="750"
+                                                data-purecounter-duration="5" class="purecounter">750</span>
+                                        </div>
+                                        <h3 class="title">Successful Connections</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 sm-pr-0 sm-pl-0">
+                                <div class="counter-list">
+                                    <div class="counter-text">
+                                        <div class="count-number">
+                                            <span data-purecounter-start="0" data-purecounter-end="1150"
+                                                data-purecounter-duration="5" class="purecounter">1150</span>
+                                        </div>
+                                        <h3 class="title">Categories Covered</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-md-6 pr-10 pt-40 sm-pt-0 sm-pr-0 sm-pl-0">
+                            <div class="services-item mb-20">
+                                <div class="services-icon">
+                                    <div class="image-part">
+                                        <img class="main-img" src="assets/img/icons/verification.png" alt="">
+                                        <img class="hover-img" src="assets/img/icons/verification-white.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="services-content">
+                                    <div class="services-text">
+                                        <h3 class="title"><a href="web-development.html">Verified Listings</a></h3>
+                                    </div>
+                                    <div class="services-desc">
+                                        <p>
+                                            We provide an extensive collection of thoroughly verified business listings
+                                            to ensure authenticity.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-item cyan-bg">
+                                <div class="services-icon">
+                                    <div class="image-part">
+                                        <img class="main-img" src="assets/img/icons/link.png" alt="">
+                                        <img class="hover-img" src="assets/img/icons/link-white.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="services-content">
+                                    <div class="services-text">
+                                        <h3 class="title"><a href="web-development.html">Industry-Specific Insights</a>
+                                        </h3>
+                                    </div>
+                                    <div class="services-desc">
+                                        <p>
+                                            Businesses can explore industry trends, ratings, and reviews before making a
+                                            decision.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pl-10 sm-pr-0 sm-pl-0 sm-mt-20">
+                            <div class="services-item gold-bg mb-20">
+                                <div class="services-icon">
+                                    <div class="image-part">
+                                        <img class="main-img" src="assets/img/icons/analysis.png" alt="">
+                                        <img class="hover-img" src="assets/img/icons/analysis-white.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="services-content">
+                                    <div class="services-text">
+                                        <h3 class="title"><a href="web-development.html">Seamless Networking</a></h3>
+                                    </div>
+                                    <div class="services-desc">
+                                        <p>
+                                            Connect directly with top-rated companies and service providers
+                                            effortlessly.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-item blue-bg">
+                                <div class="services-icon">
+                                    <div class="image-part">
+                                        <img class="main-img" src="assets/img/icons/growth.png" alt="">
+                                        <img class="hover-img" src="assets/img/icons/growth-white.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="services-content">
+                                    <div class="services-text">
+                                        <h3 class="title"><a href="web-development.html">Business Growth Support</a>
+                                        </h3>
+                                    </div>
+                                    <div class="services-desc">
+                                        <p>
+                                            We help businesses gain visibility, attract customers, and generate leads.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-padding-100 bg-blue-opacity overflow-hidden-x ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="common-title-dark text-center">
+                        <h3>Featured Companies</h3>
+
+                        <p>Discover top-rated businesses in various industries, carefully selected for their
+                            quality, reliability, and customer satisfaction.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="company-item">
+                        <div class="row mb-2">
+
+                            <div class="col-3 pe-0">
+                                <img src="assets/img/company/1.webp" class="company-logo">
+                            </div>
+                            <div class="col-9">
+                                <div class="company-name">Becon Soluation LTD</div>
+                                <div class="location"><i class="fa-solid fa-location-dot me-2"></i>San Francisco, CA,
+                                    USA
+                                </div>
+                                <div class="company-link"><a class="" href="#!" target="_blank"><i
+                                            class="fa-solid fa-earth-americas me-2"></i>www.becon.com</a></div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i> 5 (review 975)
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="company-description">Becon Soluation LTD is a leading business advisory firm
+                                    specializing in financial
+                                    management, risk assessment, and business strategy. With over a decade of
+                                    experience, we have helped hundreds of startups and enterprises achieve sustainable
+                                    growth. Our expert team offers customized solutions for business expansion, market
+                                    entry, and operational efficiency.</div>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 mt-2">
+                                <div class="cat-featured-tag">Market Research</div>
+                                <a class="link-btn" href="company-details.html">Learn More<i
+                                        class="fa-solid fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4">
+                    <div class="company-item">
+                        <div class="row mb-2">
+
+                            <div class="col-3 pe-0">
+                                <img src="assets/img/company/2.webp" class="company-logo">
+                            </div>
+                            <div class="col-9">
+                                <div class="company-name">Becon Soluation LTD</div>
+                                <div class="location"><i class="fa-solid fa-location-dot me-2"></i>San Francisco, CA,
+                                    USA
+                                </div>
+                                <div class="company-link"><a class="" href="#!" target="_blank"><i
+                                            class="fa-solid fa-earth-americas me-2"></i>www.becon.com</a></div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i> 5 (review 975)
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="company-description">Becon Soluation LTD is a leading business advisory firm
+                                    specializing in financial
+                                    management, risk assessment, and business strategy. With over a decade of
+                                    experience, we have helped hundreds of startups and enterprises achieve sustainable
+                                    growth. Our expert team offers customized solutions for business expansion, market
+                                    entry, and operational efficiency.</div>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 mt-2">
+                                <div class="cat-featured-tag">Market Research</div>
+                                <a class="link-btn" href="company-details.html">Learn More<i
+                                        class="fa-solid fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4">
+                    <div class="company-item">
+                        <div class="row mb-2">
+
+                            <div class="col-3 pe-0">
+                                <img src="assets/img/company/3.webp" class="company-logo">
+                            </div>
+                            <div class="col-9">
+                                <div class="company-name">Becon Soluation LTD</div>
+                                <div class="location"><i class="fa-solid fa-location-dot me-2"></i>San Francisco, CA,
+                                    USA
+                                </div>
+                                <div class="company-link"><a class="" href="#!" target="_blank"><i
+                                            class="fa-solid fa-earth-americas me-2"></i>www.becon.com</a></div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i> 5 (review 975)
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="company-description">Becon Soluation LTD is a leading business advisory firm
+                                    specializing in financial
+                                    management, risk assessment, and business strategy. With over a decade of
+                                    experience, we have helped hundreds of startups and enterprises achieve sustainable
+                                    growth. Our expert team offers customized solutions for business expansion, market
+                                    entry, and operational efficiency.</div>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 mt-2">
+                                <div class="cat-featured-tag">Market Research</div>
+                                <a class="link-btn" href="company-details.html">Learn More<i
+                                        class="fa-solid fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4">
+                    <div class="company-item">
+                        <div class="row mb-2">
+
+                            <div class="col-3 pe-0">
+                                <img src="assets/img/company/4.webp" class="company-logo">
+                            </div>
+                            <div class="col-9">
+                                <div class="company-name">Becon Soluation LTD</div>
+                                <div class="location"><i class="fa-solid fa-location-dot me-2"></i>San Francisco, CA,
+                                    USA
+                                </div>
+                                <div class="company-link"><a class="" href="#!" target="_blank"><i
+                                            class="fa-solid fa-earth-americas me-2"></i>www.becon.com</a></div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i> 5 (review 975)
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="company-description">Becon Soluation LTD is a leading business advisory firm
+                                    specializing in financial
+                                    management, risk assessment, and business strategy. With over a decade of
+                                    experience, we have helped hundreds of startups and enterprises achieve sustainable
+                                    growth. Our expert team offers customized solutions for business expansion, market
+                                    entry, and operational efficiency.</div>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 mt-2">
+                                <div class="cat-featured-tag">Market Research</div>
+                                <a class="link-btn" href="company-details.html">Learn More<i
+                                        class="fa-solid fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4">
+                    <div class="company-item">
+                        <div class="row mb-2">
+
+                            <div class="col-3 pe-0">
+                                <img src="assets/img/company/5.webp" class="company-logo">
+                            </div>
+                            <div class="col-9">
+                                <div class="company-name">Becon Soluation LTD</div>
+                                <div class="location"><i class="fa-solid fa-location-dot me-2"></i>San Francisco, CA,
+                                    USA
+                                </div>
+                                <div class="company-link"><a class="" href="#!" target="_blank"><i
+                                            class="fa-solid fa-earth-americas me-2"></i>www.becon.com</a></div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i> 5 (review 975)
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="company-description">Becon Soluation LTD is a leading business advisory firm
+                                    specializing in financial
+                                    management, risk assessment, and business strategy. With over a decade of
+                                    experience, we have helped hundreds of startups and enterprises achieve sustainable
+                                    growth. Our expert team offers customized solutions for business expansion, market
+                                    entry, and operational efficiency.</div>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 mt-2">
+                                <div class="cat-featured-tag">Market Research</div>
+                                <a class="link-btn" href="company-details.html">Learn More<i
+                                        class="fa-solid fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4">
+                    <div class="company-item">
+                        <div class="row mb-2">
+
+                            <div class="col-3 pe-0">
+                                <img src="assets/img/company/6.webp" class="company-logo">
+                            </div>
+                            <div class="col-9">
+                                <div class="company-name">Becon Soluation LTD</div>
+                                <div class="location"><i class="fa-solid fa-location-dot me-2"></i>San Francisco, CA,
+                                    USA
+                                </div>
+                                <div class="company-link"><a class="" href="#!" target="_blank"><i
+                                            class="fa-solid fa-earth-americas me-2"></i>www.becon.com</a></div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i> 5 (review 975)
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="company-description">Becon Soluation LTD is a leading business advisory firm
+                                    specializing in financial
+                                    management, risk assessment, and business strategy. With over a decade of
+                                    experience, we have helped hundreds of startups and enterprises achieve sustainable
+                                    growth. Our expert team offers customized solutions for business expansion, market
+                                    entry, and operational efficiency.</div>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 mt-2">
+                                <div class="cat-featured-tag">Market Research</div>
+                                <a class="link-btn" href="company-details.html">Learn More<i
+                                        class="fa-solid fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center mt-3">
+                    <a href="#!" class="btn btn-primary round-50">All Companies<i
+                            class="fa-solid fa-chevron-right ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding-100 featured-category pb-0 overflow-hidden-x ">
+        <div class="container">
+            <div class="common-title-dark text-center">
+                <h3>Featured Category</h3>
+
+                <p>Find the perfect business for your needs! Explore our featured categories and connect with top-rated
+                    companies across various industries.</p>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services-item bg-blue-opacity blue-bg">
+                        <div class="services-icon">
+                            <div class="image-part">
+                                <img class="main-img" src="assets/img/category/1.png" alt="">
+                                <img class="hover-img" src="assets/img/category/1.1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-text">
+                                <h3 class="title"><a href="web-development.html">IT & Software
+                                        Development</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services-item bg-blue-opacity blue-bg">
+                        <div class="services-icon">
+                            <div class="image-part">
+                                <img class="main-img" src="assets/img/category/2.png" alt="">
+                                <img class="hover-img" src="assets/img/category/2.2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-text">
+                                <h3 class="title"><a href="web-development.html">Digital Marketing & SEO</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services-item bg-blue-opacity blue-bg">
+                        <div class="services-icon">
+                            <div class="image-part">
+                                <img class="main-img" src="assets/img/category/3.png" alt="">
+                                <img class="hover-img" src="assets/img/category/3.1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-text">
+                                <h3 class="title"><a href="web-development.html"> Business Consulting &
+                                        Finance</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services-item bg-blue-opacity blue-bg">
+                        <div class="services-icon">
+                            <div class="image-part">
+                                <img class="main-img" src="assets/img/category/4.png" alt="">
+                                <img class="hover-img" src="assets/img/category/4.1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-text">
+                                <h3 class="title"><a href="web-development.html">E-commerce & Retail</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services-item bg-blue-opacity blue-bg">
+                        <div class="services-icon">
+                            <div class="image-part">
+                                <img class="main-img" src="assets/img/category/5.png" alt="">
+                                <img class="hover-img" src="assets/img/category/5.1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-text">
+                                <h3 class="title"><a href="web-development.html">Logistics & Supply
+                                        Chain</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services-item bg-blue-opacity blue-bg">
+                        <div class="services-icon">
+                            <div class="image-part">
+                                <img class="main-img" src="assets/img/category/6.png" alt="">
+                                <img class="hover-img" src="assets/img/category/6.1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-text">
+                                <h3 class="title"><a href="web-development.html">Real Estate & Property
+                                        Management</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services-item bg-blue-opacity blue-bg">
+                        <div class="services-icon">
+                            <div class="image-part">
+                                <img class="main-img" src="assets/img/category/7.png" alt="">
+                                <img class="hover-img" src="assets/img/category/7.1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-text">
+                                <h3 class="title"><a href="web-development.html">Telecommunication</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services-item bg-blue-opacity blue-bg">
+                        <div class="services-icon">
+                            <div class="image-part">
+                                <img class="main-img" src="assets/img/category/8.png" alt="">
+                                <img class="hover-img" src="assets/img/category/8.1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-text">
+                                <h3 class="title"><a href="web-development.html">Education & Training</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="services-item bg-blue-opacity blue-bg">
+                        <div class="services-icon">
+                            <div class="image-part">
+                                <img class="main-img" src="assets/img/category/9.png" alt="">
+                                <img class="hover-img" src="assets/img/category/9.1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="services-content">
+                            <div class="services-text">
+                                <h3 class="title"><a href="web-development.html">More Category...</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process section-padding-100 overflow-hidden-x ">
+        <div class="container">
+            <div class="row">
+                <!--  -->
+                <div class="col-lg-12">
+                    <div class="common-title-dark text-center">
+                        <h3>How It Works</h3>
+
+                        <p>A step-by-step guide on how users can list their business or find companies.</p>
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="pq-process-step pq-style-2">
+                        <span class="pq-process-number">01</span>
+                        <div class="pq-process-info">
+                            <h5 class="pq-process-title"><strong>Search</strong> for a company</h5>
+                            <p class="pq-process-description">Easily find businesses from various industries using our
+                                advanced search and filter options. Browse company listings based on industry, location,
+                                and services to find the right fit for your needs.</p>
+                            <div class="pq-btn-container">
+                                <a class="pq-button pq-button-icon" href="our-process.html">
+                                    <span class="pq-button-line"></span>
+                                    <i class="ion ion-ios-arrow-right"></i>
+                                </a>
+                            </div>
+                            <img decoding="async" src="assets/img/icons/arrow-3.jpg" alt="arrow-img"
+                                class="pq-before-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 mt-4 mt-md-0">
+                    <div class="pq-process-step pq-style-2 pq-mt-60">
+                        <span class="pq-process-number">02</span>
+                        <div class="pq-process-info">
+                            <h5 class="pq-process-title"><strong>Compare</strong> & <strong>Read</strong> Reviews</h5>
+                            <p class="pq-process-description">Make informed decisions by comparing companies, reading
+                                authentic customer reviews, and checking ratings. See how businesses are performing
+                                before choosing the best service provider.</p>
+                            <div class="pq-btn-container">
+                                <a class="pq-button pq-button-icon" href="our-process.html">
+                                    <span class="pq-button-line"></span>
+                                    <i class="ion-ios-arrow-right"></i>
+                                </a>
+                            </div>
+                            <img decoding="async" src="assets/img/icons/arrow-3.jpg" alt="arrow-img"
+                                class="pq-before-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 mt-4 mt-xl-0">
+                    <div class="pq-process-step pq-style-2 pq-mt-120">
+                        <span class="pq-process-number">03</span>
+                        <div class="pq-process-info">
+                            <h5 class="pq-process-title"><strong>Connect</strong> & <strong>Get</strong> Services</h5>
+                            <p class="pq-process-description">Directly connect with businesses through our platform,
+                                request quotes, and avail services effortlessly. Get the best deals and grow your
+                                network with trusted companies.</p>
+                            <div class="pq-btn-container">
+                                <a class="pq-button pq-button-icon" href="our-process.html">
+                                    <span class="pq-button-line"></span>
+                                    <i class="ion-ios-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-testimonial-div">
+                <img src="assets/img/testimonial/1.png" class="pq-floating-img-1" alt="">
+                <img src="assets/img/testimonial/2.png" class="pq-floating-img-2" alt="">
+                <img src="assets/img/testimonial/3.png" class="pq-floating-img-3" alt="">
+                <img src="assets/img/testimonial/4.png" class="pq-floating-img-4" alt="">
+                <div class="row">
+                    <div class="col-lg-9 mx-auto">
+                        <div class="mt-5">
+                            <div class="swiper mySwiper testimonials-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="pq-testimonial-box pq-style-3 text-center ">
+                                            <div class="pq-testimonial-content">
+                                                <div class="pq-testimonial-quote"><i class="fas fa-quote-right"></i>
+                                                </div>
+                                                <p class="pq-testimonial-description">Information Technology (IT)
+                                                    services refer to the
+                                                    range of services provided to organizations or individuals to
+                                                    support their
+                                                    technology needs and enable efficient and effective use of
+                                                    information systems.
+                                                    These services can be offered by internal IT departments within an
+                                                    organization or
+                                                    outsourced to external service providers.</p>
+                                            </div>
+                                            <div class="pq-testimonial-info">
+                                                <div class="pq-testimonial-meta">
+                                                    <div class="pq-testimonial-data">
+                                                        <h5 class="pq-testmonial-title">Alex John Martin</h5>
+                                                        <span>Web Designer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="pq-testimonial-box pq-style-3 text-center ">
+                                            <div class="pq-testimonial-content">
+                                                <div class="pq-testimonial-quote"><i class="fas fa-quote-right"></i>
+                                                </div>
+                                                <p class="pq-testimonial-description">Information Technology (IT)
+                                                    services refer to the
+                                                    range of services provided to organizations or individuals to
+                                                    support their
+                                                    technology needs and enable efficient and effective use of
+                                                    information systems.
+                                                    These services can be offered by internal IT departments within an
+                                                    organization or
+                                                    outsourced to external service providers.</p>
+                                            </div>
+                                            <div class="pq-testimonial-info">
+                                                <div class="pq-testimonial-meta">
+                                                    <div class="pq-testimonial-data">
+                                                        <h5 class="pq-testmonial-title">Alex John Martin</h5>
+                                                        <span>Web Designer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="pq-testimonial-box pq-style-3 text-center">
+                                            <div class="pq-testimonial-content">
+                                                <div class="pq-testimonial-quote"><i class="fas fa-quote-right"></i>
+                                                </div>
+                                                <p class="pq-testimonial-description">Information Technology (IT)
+                                                    services refer to the
+                                                    range of services provided to organizations or individuals to
+                                                    support their
+                                                    technology needs and enable efficient and effective use of
+                                                    information systems.
+                                                    These services can be offered by internal IT departments within an
+                                                    organization or
+                                                    outsourced to external service providers.</p>
+                                            </div>
+                                            <div class="pq-testimonial-info">
+                                                <div class="pq-testimonial-meta">
+                                                    <div class="pq-testimonial-data">
+                                                        <h5 class="pq-testmonial-title">Alex John Martin</h5>
+                                                        <span>Web Designer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section-padding-100 bg-blue-opacity overflow-hidden-x newsteller">
+        <div class="container">
+
+            <div class="common-title-dark text-center">
+                <h3>Stay Up to Date</h3>
+                <p>Subscribe to our newsletter to receive our weekly feed.</p>
+            </div>
+            <div class="row mt-4 mt-md-5 justify-content-center">
+                <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+                    <div class="pxp-subscribe-1-container pxp-animate-in pxp-animate-in-top pxp-in">
+                        <div class="pxp-subscribe-1-image">
+                            <img src="assets/img/bg/subscribe.png" alt="Stay Up to Date" class="img-fluid">
+                        </div>
+                        <div class="pxp-subscribe-1-form">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Enter your email...">
+                                    <button class="btn btn-primary" type="button">Subscribe<span
+                                            class="fa fa-angle-right"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rs-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-3 col-md-4">
+                        <div class="footer-logo">
+                            <a href="/">
+                                <img src="assets/img/logo/logo-dark.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="textwidget pb-3">
+                            <p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce
+                                with illo inventore veritatis</p>
+                        </div>
+                        <ul class="footer-social md-mb-30">
+                            <li><a href="/onepage-5"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="/onepage-5"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="/onepage-5"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            <li><a href="/onepage-5"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 pl-44 md-pl-14 md-mb-30">
+                        <h3 class="widget-title">Top Category</h3>
+                        <ul class="site-map">
+                            <li><a href="">IT & Software
+                                    Development</a></li>
+                            <li><a href="">Digital Marketing & SEO</a></li>
+                            <li><a href=""> Business Consulting &
+                                    Finance</a></li>
+                            <li><a href="">Logistics & Supply
+                                    Chain</a></li>
+                            <li><a href="">Real Estate & Property
+                                    Management</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 md-mb-30">
+                        <h3 class="widget-title">Contact Info</h3>
+                        <ul class="address-widget">
+                            <li><i class="fa-solid fa-location-dot"></i>
+                                <div class="desc">374 FA Tower, William S Blvd 2721, IL, USA</div>
+                            </li>
+                            <li><i class="fa-solid fa-phone"></i>
+                                <div class="desc"><a href="/onepage-5">(+880)155-69569</a></div>
+                            </li>
+                            <li><i class="fa-solid fa-envelope"></i>
+                                <div class="desc"><a href="/onepage-5">support@rstheme.com</a></div>
+                            </li>
+                            <li><i class="fa-regular fa-clock"></i>
+                                <div class="desc">Opening Hours: 10:00 - 18:00</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-12 col-sm-12">
+                        <h3 class="widget-title">Newsletter</h3>
+                        <p class="widget-desc">We denounce with righteous and in and dislike men who are so beguiled and
+                            demo realized.</p>
+                        <p>
+                            <div class="newsletter-area pt-75 pb-40">
+                                <div class="single-newsletters">
+                                    <div class="newsletter-form">
+                                        <div><input type="email" placeholder="Your email"><button>Submit</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row y-middle">
+                    <div class="col-lg-6 text-right md-text-center md-mb-10 mb-0 order-last d-flex justify-content-end">
+                        <ul class="copy-right-menu mb-0">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/shop">Shop</a></li>
+                            <li><a href="/faq">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="copyright text-center text-lg-start md-mb-10">
+                            <p>© 2025 All Rights Reserved. Developed By <a href="#!" target="_blank">Technohaat LTD</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
