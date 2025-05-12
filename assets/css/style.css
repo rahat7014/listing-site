@@ -85,13 +85,13 @@ a {
 /* =============================================================== */
 
 .navbar {
-    padding: 20px 0;
+    padding: 0;
     background-color: #ffffff !important;
     box-shadow: var(--box-shadow-1);
 }
 
 .navbar .navbar-brand .logo-img {
-    width: 140px;
+    width: 225px;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -528,6 +528,7 @@ a {
     border-radius: 10px;
     text-decoration: none;
     position: relative;
+    min-height: 315px;
 }
 
 .cat-featured-tag {
@@ -565,9 +566,13 @@ a {
     right: -10px;
 }
 
+.company-logo-area {
+    width: 110px;
+    margin-bottom: 10px;
+}
+
 .company-logo {
     width: 100%;
-    border-radius: 10px;
 }
 
 .company-name {
@@ -578,18 +583,42 @@ a {
 }
 
 .company-item .location {
+    position: relative;
     color: rgb(103 113 126);
     font-size: 13px;
     font-weight: 500;
     margin-bottom: 8px;
-    line-height: 1;
+    line-height: 1.4;
+    padding-left: 15px;
+}
+
+.company-item .location:before {
+    position: absolute;
+    content: '\f3c5';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: rgb(103 113 126);
+    font-size: 13px;
+    left: 0;
 }
 
 .company-link {
+    position: relative;
     font-size: 13px;
     font-weight: 500;
     margin-bottom: 8px;
-    line-height: 1;
+    line-height: 1.4;
+    padding-left: 18px;
+}
+
+.company-link:before {
+    position: absolute;
+    content: '\f57d';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: rgb(103 113 126);
+    font-size: 13px;
+    left: 0;
 }
 
 .company-link a {
@@ -597,16 +626,29 @@ a {
 }
 
 .rating {
+    position: relative;
     font-size: 13px;
     font-weight: 500;
     margin-bottom: 8px;
     line-height: 1;
     color: rgb(103 113 126);
+    line-height: 1.4;
+    padding-left: 18px;
 }
 
-.rating i {
-    color: var(--bs-primary);
+.rating:before {
+    position: absolute;
+    content: '\f005';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: rgb(103 113 126);
+    font-size: 13px;
+    left: 0;
 }
+
+/* .rating i {
+    color: var(--bs-primary);
+} */
 
 .company-description {
     padding: 5px 0;
@@ -809,7 +851,29 @@ Process Step
 
 /* ===================================================================== */
 
-.rs-footer {
+footer {
+    background-color: #F5F6F9;
+}
+
+.footer-links li {
+    margin: 0 25px;
+}
+
+.footer-links li a {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgb(103 113 126);
+    text-decoration: none;
+    transition: all 0.8s ease-in-out;
+}
+
+.social-media-links li {
+    margin: 0 20px;
+}
+
+/* .rs-footer {
     background: url(/assets/img/bg/footer-bg.png);
     background-color: #F5F6F9;
     background-size: cover;
@@ -946,28 +1010,28 @@ Process Step
 }
 
 .rs-footer .footer-top p ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
+
 
     color: #454545;
     opacity: 1;
 }
 
 .rs-footer .footer-top p ::-moz-placeholder {
-    /* Firefox 19+ */
+    
 
     color: #454545;
     opacity: 1;
 }
 
 .rs-footer .footer-top p :-ms-input-placeholder {
-    /* IE 10+ */
+    
 
     color: #454545;
     opacity: 1;
 }
 
 .rs-footer .footer-top p :-moz-placeholder {
-    /* Firefox 18- */
+   
 
     color: #454545;
     opacity: 1;
@@ -1020,7 +1084,7 @@ Process Step
 
 .rs-footer .footer-bottom .copy-right-menu li:first-child:before {
     display: none;
-}
+} */
 
 
 /* ======================== */
@@ -2467,7 +2531,7 @@ Responsive style
         flex-wrap: wrap;
     }
 
-    .copyright{
+    .copyright {
         margin-bottom: 10px;
     }
 
