@@ -867,10 +867,29 @@ footer {
     color: rgb(103 113 126);
     text-decoration: none;
     transition: all 0.8s ease-in-out;
+    white-space: nowrap;
 }
 
 .social-media-links li {
     margin: 0 20px;
+}
+
+.footer-links {
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .footer-links li {
+        margin: 0px 10px;
+    }
+
+    .footer-links li a {
+        font-size: 14px;
+    }
+
+    .social-media-links li {
+        margin: 0px 5px;
+    }
 }
 
 /* .rs-footer {
@@ -1812,31 +1831,7 @@ footer {
     position: relative;
 }
 
-.rs-team-Single .btm-info-team .con-info .designation-info {
-    font-size: 16px;
-    line-height: 27px;
-    font-weight: 400;
-    color: #0B70E1;
-    display: block;
-    text-transform: uppercase;
-}
 
-.rs-team-Single .btm-info-team .con-info .title {
-    font-size: 36px;
-    line-height: 46px;
-    font-weight: 700;
-    color: #101010;
-    margin-bottom: 10px;
-}
-
-.rs-team-Single .btm-info-team .con-info .short-desc {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #454545;
-    margin-bottom: 25px;
-    padding-right: 50px;
-}
 
 .rs-team-Single .btm-info-team .con-info .ps-informations .personal-info li {
     margin: 5px 0 10px;
@@ -2244,7 +2239,7 @@ Responsive style
 
 
     .navbar .navbar-brand .logo-img {
-        width: 105px;
+        width: 150px;
     }
 
     .navbar-toggler {
@@ -2548,5 +2543,225 @@ Responsive style
         background-color: #fff;
         box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
         border-radius: 40px;
+    }
+}
+
+
+/* ============================================== */
+
+.profile-picture {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.con-info .media-house-name {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #033b78;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.media-house-name strong {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.con-info .designation-info {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #033b78;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.con-info .designation-info strong {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.con-info .title {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+    color: #101010;
+    margin-bottom: 0;
+}
+
+
+.profile-title {
+    padding-left: 10px;
+    border-left: 3px solid var(--bs-primary);
+    font-size: 18px;
+    margin-bottom: 5px;
+    background: #f6f6f6;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.con-info .short-desc {
+    line-height: 26px;
+    padding: 5px 0;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(49, 54, 61);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.short-desc-modal {
+    line-height: 26px;
+    padding: 5px 0;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(49, 54, 61);
+}
+
+.pp-social-info li {
+    margin-right: 8px;
+}
+
+.pp-social-info li a {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.pp-social-info li a img {
+    width: 24px;
+    height: 24px;
+}
+
+.pp-social-info .social-title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.company-item.perv-house-info {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    min-height: fit-content;
+
+}
+
+.company-item.perv-house-info .join-date,
+.company-item.perv-house-info .leaving-date,
+.company-item.perv-house-info .prev-designation {
+    position: relative;
+    color: rgb(103 113 126);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    padding-left: 22px;
+}
+
+.company-item.perv-house-info .join-date:before {
+    position: absolute;
+    content: '\f2f6';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: rgb(103 113 126);
+    font-size: 15px;
+    left: 0;
+}
+
+.company-item.perv-house-info .leaving-date:before {
+    position: absolute;
+    content: '\f08b';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: rgb(103 113 126);
+    font-size: 15px;
+    left: 0;
+}
+
+.company-item.perv-house-info .prev-designation:before {
+    position: absolute;
+    content: '\f05a';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: rgb(103 113 126);
+    font-size: 15px;
+    left: 0;
+}
+
+.company-name.perv-house-info {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 18px;
+}
+
+
+.profile-personal-info-list {
+    padding: 0;
+    margin: 0;
+}
+
+.profile-personal-info-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: rgb(49, 54, 61);
+}
+
+.profile-personal-info-list li label {
+    font-weight: 600;
+}
+
+.profile-personal-info-list li a {
+    color: rgb(49, 54, 61);
+}
+
+@media(max-width: 576px) {
+    .con-info .title {
+        font-size: 28px;
+        line-height: 40px;
+        font-weight: 600;
+        color: #101010;
+        margin-bottom: 0;
+    }
+
+    .media-house-name strong {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+
+    .con-info .designation-info {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        color: #033b78;
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+
+    .con-info .short-desc {
+        line-height: 22px;
+        padding: 5px 0;
+        text-align: justify;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(49, 54, 61);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
     }
 }
