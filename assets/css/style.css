@@ -2809,3 +2809,204 @@ Responsive style
         -webkit-box-orient: vertical;
     }
 }
+
+
+/* ========================================= */
+.auth-area {
+    padding: 50px 0 !important;
+}
+
+.auth-body {
+    width: 100%;
+    max-width: 460px;
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.04) 0px 12px 32px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+    background-color: rgb(255, 255, 255);
+    padding: 48px 48px 40px;
+    margin: 15px auto;
+}
+
+.auth-title h3 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 525;
+    text-align: center;
+    margin-bottom: 8px;
+    color: rgb(26, 43, 61);
+}
+
+.auth-title p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(90, 101, 115);
+}
+
+.breakdown-section {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgb(90, 101, 115);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 12px;
+    background: #fff;
+    text-align: center;
+}
+
+
+.breakdown-section::before {
+    flex: 1 1 0%;
+    content: "";
+    height: 1px;
+    background-color: rgb(226, 232, 240);
+    margin-right: 12px;
+}
+
+.breakdown-section:after {
+    flex: 1 1 0%;
+    content: "";
+    height: 1px;
+    background-color: rgb(226, 232, 240);
+    margin-left: 12px;
+}
+
+.sm-auth-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    background-color: #fc5f2212;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    font-weight: 475;
+    color: rgb(62, 73, 87) !important;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.google-color {
+    background-color: #db44372e;
+}
+
+.google-color:hover {
+    background-color: #db44374d;
+}
+
+.fb-color {
+    background-color: #4867aa38;
+}
+
+.fb-color:hover {
+    background-color: #4867aa69;
+}
+
+.auth-body .input-area label {
+    color: #3E4957;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    padding: 0;
+    position: relative;
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-bottom: 3px;
+}
+
+.auth-body .input-area .form-control {
+    height: 42px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #444242;
+    background-color: #ffffff;
+}
+
+.auth-body .input-area .form-control[type="email"] {
+    text-transform: lowercase;
+}
+
+.auth-body .input-area {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.pass-wrapper {
+    position: relative;
+}
+
+.auth-body .input-area .pass-wrapper .wrapper-icon {
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* When input is focused, filled, valid, or autofilled */
+.auth-body .input-area .form-control:focus,
+.auth-body .input-area .form-control:not(:placeholder-shown) {
+    box-shadow: none !important;
+    border-color: var(--bs-primary) !important;
+    background-color: #03228f1f !important;
+}
+
+.auth-body .footer-note,
+.btn-forget,
+.btn-remember {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bs-black);
+}
+
+.password-note {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--bs-black);
+}
+
+.otp-digit {
+    width: 100%;
+    text-align: center;
+    height: 48px;
+    border-radius: 6px;
+}
+
+.otp-digit:focus,
+.otp-digit:not(:placeholder-shown) {
+    box-shadow: none !important;
+    border-color: var(--bs-primary) !important;
+    background-color: #03228f1f !important;
+}
+
+@media (max-width: 576px) {
+    .auth-body {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 12px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        /* box-shadow: rgba(0, 0, 0, 0.04) 0px 12px 32px; */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+        margin: 15px auto;
+    }
+
+    .auth-title h3 {
+        font-size: 25px;
+        line-height: 28px;
+    }
+}
