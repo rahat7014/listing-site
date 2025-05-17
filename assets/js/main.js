@@ -57,11 +57,37 @@ $(document).ready(function () {
   $(document).ready(function () {
     $('select').niceSelect();
   });
+
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-      new bootstrap.Tooltip(tooltipTriggerEl)
-    })
+  const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+    new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+});
+
+
+
+// Run baguetteBox on all swiper slides (inside .swiper)
+  baguetteBox.run('.swiper', {
+    animation: 'fadeIn',
+    captions: true
+  });
+
+  // Enable Swiper with hover autoplay
+  document.querySelectorAll('.pgSwiper').forEach((swiperContainer) => {
+    const swiper = new Swiper(swiperContainer, {
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+    });
+
+    swiper.autoplay.stop(); // default paused
+
+    // Hover to play, leave to stop
+    swiperContainer.addEventListener('mouseenter', () => swiper.autoplay.start());
+    swiperContainer.addEventListener('mouseleave', () => swiper.autoplay.stop());
   });

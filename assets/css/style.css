@@ -776,7 +776,7 @@ Process Step
 }
 
 .pq-testimonial-div {
-    margin-top: 80px;
+    margin-top: 0;
     background-color: #f2f2f2;
     padding: 60px 15px;
     border-radius: 900px;
@@ -2546,6 +2546,50 @@ Responsive style
     }
 }
 
+/* ============================================== */
+.photo-gallery {
+    background-color: rgba(244, 242, 255, .5);
+}
+
+.gallery-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.gallery-box .gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-box .swiper {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.gallery-box .swiper-slide {
+    border-radius: 8px;
+}
+
+.gallery-box .swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+}
+
+.gallery-box .floating-title {
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 0;
+    color: #fff !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1.5) 100%);
+    width: 100%;
+    padding: 10px 10px 3px 10px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 0 0 5px 5px;
+    z-index: 9;
+}
 
 /* ============================================== */
 
